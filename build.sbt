@@ -9,5 +9,5 @@ scalaVersion := "2.11.7"
 val genTask = TaskKey[Unit]("gen", "Generate")
 
 genTask := {
-  PlaySkeletonBootstrap
+  PlaySkeletonBootstrap.main(Array("", "", "-client"))
 }
